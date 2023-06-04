@@ -1,23 +1,41 @@
-import React from "react"
+import React, { useState } from "react"
 import { Button, Input, Label } from "reactstrap"
 import ModalComponent from "./components/ModalComponent"
 import "./App.css"
 
 const App = () => {
+const [open, setOpen] = useState(false);
+const [name, setName] =useState("")
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleReset = ()=> {
+    setName("");
+    setOpen(false);
+  };
+
   return (
     <div className="entire-content">
       <h1>Preparedness Assessment</h1>
       <div className="form">
         <div className="input">
-          <Label for="name">Enter your name</Label>
-          <Input />
+        <Label className="label" for="userName">Enter your name: </Label>
+          <Input className="input-field" onChange={handleName}/>
         </div>
-        <Button>Click Me</Button>
-        <Button>Reset</Button>
-        <ModalComponent />
-      </div>
+        <div className="btnCont">
+        <Button className="btn" onClick = {handleClick}>Click Me</Button>
+        <Button  className="btn" onClick = {handleReset}>Reset</Button>
+        </div>
+        </div>
+        {open && <ModalComponent userName={name} onClose={() => setOpen(false)} />}
     </div>
-  )
-}
-
+  );
+};
+// modal needs an onClick to be rendered, otherwise hidden
 export default App

@@ -1,0 +1,68 @@
+body {
+    background-image: url(./assets/background-image.jpeg);
+    background-size: cover;
+  }
+  
+  .entire-content {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input label {
+    color: white;
+    font-size: 35px;
+  }
+  
+  .input input {
+    font-size: 18px;
+    width: 50%;
+    margin: 6px 0;
+    padding: 6px 12px;
+  }
+  
+  .btnCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form .btn {
+    background-color: #0dcaf0;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form .btn + .btn {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  #bG{
+    height: 20vh;
+    width:20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #0dcaf0;
+  }
+
+ 
