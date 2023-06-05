@@ -6,14 +6,15 @@ body {
   .entire-content {
     height: 100vh;
     width: 100vw;
+    color: white;
   }
   
-  h1 {
-    color: white;
+ .head{
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   
   .input {
@@ -55,14 +56,43 @@ body {
   }
   
   #bG{
-    height: 20vh;
-    width:20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 60vh;
+    width:30vw;
     margin: 0 auto;
     flex-direction: column;
-    background-color: #0dcaf0;
+    background-color: whitesmoke;
+    color:black;
+    border-radius: 10px;
+  }
+  
+  .modalHead {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-Top: 20px;
+  }
+  
+  .close {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right:20px;
+    padding-top:20px;
   }
 
+  .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;  
+  }
  
+
+  

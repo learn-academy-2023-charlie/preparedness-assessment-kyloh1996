@@ -19,3 +19,8 @@ create  a state set to false and an onclick/onclose function
 initialize a begining state to refer back to 
 
 ## save user input so its rendered when clicked 
+
+
+Extra: 
+Get the background to blur when modal is open
+

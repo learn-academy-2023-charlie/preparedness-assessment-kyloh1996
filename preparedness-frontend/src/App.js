@@ -22,7 +22,7 @@ const [name, setName] =useState("")
 
   return (
     <div className="entire-content">
-      <h1>Preparedness Assessment</h1>
+      <h1 className="head">Preparedness Assessment</h1>
       <div className="form">
         <div className="input">
         <Label className="label" for="userName">Enter your name: </Label>
