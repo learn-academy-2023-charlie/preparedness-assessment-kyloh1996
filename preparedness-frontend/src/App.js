@@ -5,7 +5,8 @@ import "./App.css"
 
 const App = () => {
 const [open, setOpen] = useState(false);
-const [name, setName] =useState("")
+const [name, setName] =useState("");
+
 
   const handleClick = () => {
     setOpen(true);
@@ -26,7 +27,7 @@ const [name, setName] =useState("")
       <div className="form">
         <div className="input">
         <Label className="label" for="userName">Enter your name: </Label>
-          <Input className="input-field" onChange={handleName}/>
+          <Input className="input-field" value={name} onChange={handleName}/>
         </div>
         <div className="btnCont">
         <Button className="btn" onClick = {handleClick}>Click Me</Button>
